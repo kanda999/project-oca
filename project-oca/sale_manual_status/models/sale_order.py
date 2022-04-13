@@ -13,7 +13,7 @@ class SaleOrder(models.Model):
     manual_status = fields.Selection([
         ('consu', 'Consumable'),
         ('consu', 'Consumable'),
-        ('service', 'Service')], string='Product Type', default='consu', required=True,
+        ('service', 'Service')], string='Musterd', default='consu', required=True,
         help='A storable product is a product for which you manage stock. The Inventory app has to be installed.\n'
              'A consumable product is a product for which stock is not managed.\n'
              'A service is a non-material product you provide.')
